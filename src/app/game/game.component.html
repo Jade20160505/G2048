@@ -1,0 +1,11 @@
+
+  <table border="1">
+    <tr class="block" *ngFor="let item1 of group; let i=index">
+      <td class="son_block" *ngFor="let item2 of group[i]; let j=index">
+        {{item2}}
+      </td>
+    </tr>
+  </table>
+  <button (click)="nullOrNot()">随机</button>
+  <button (click)="up()">up</button>
+
